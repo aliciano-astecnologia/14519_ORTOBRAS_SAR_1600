@@ -1,0 +1,25 @@
+// AppDisp7s.h
+#include <gpio.h>
+#include <GenericTypes.h>
+#include <AppCiclos.h>
+
+#define LIGA_DIG_0	LIGA_SEG_A; LIGA_SEG_B; LIGA_SEG_C; LIGA_SEG_D; LIGA_SEG_E; LIGA_SEG_F
+#define LIGA_DIG_1	LIGA_SEG_B; LIGA_SEG_C
+#define LIGA_DIG_2	LIGA_SEG_A; LIGA_SEG_B; LIGA_SEG_D; LIGA_SEG_E; LIGA_SEG_G
+#define LIGA_DIG_3	LIGA_SEG_A; LIGA_SEG_B; LIGA_SEG_C; LIGA_SEG_D; LIGA_SEG_G
+#define LIGA_DIG_4	LIGA_SEG_B; LIGA_SEG_C; LIGA_SEG_F; LIGA_SEG_G
+#define LIGA_DIG_5	LIGA_SEG_A; LIGA_SEG_C; LIGA_SEG_D; LIGA_SEG_F; LIGA_SEG_G
+#define LIGA_DIG_6	LIGA_SEG_A; LIGA_SEG_C; LIGA_SEG_D; LIGA_SEG_E; LIGA_SEG_F; LIGA_SEG_G
+#define LIGA_DIG_7	LIGA_SEG_A; LIGA_SEG_B; LIGA_SEG_C
+#define LIGA_DIG_8	LIGA_SEG_A; LIGA_SEG_B; LIGA_SEG_C; LIGA_SEG_D; LIGA_SEG_E; LIGA_SEG_F; LIGA_SEG_G
+#define LIGA_DIG_9	LIGA_SEG_A; LIGA_SEG_B; LIGA_SEG_C; LIGA_SEG_D; LIGA_SEG_F; LIGA_SEG_G
+#define LIGA_DIG_F	LIGA_SEG_A; LIGA_SEG_E; LIGA_SEG_F; LIGA_SEG_G
+#define DESLIGA_ALL_DIG DESLIGA_SEG_A; DESLIGA_SEG_B; DESLIGA_SEG_C; DESLIGA_SEG_D; DESLIGA_SEG_E; DESLIGA_SEG_F; DESLIGA_SEG_G; DESLIGA_SEG_P
+
+void AppDisp7sInit(void);
+void AppDisp7sUpdate(void);
+void AppDisp7sTask(void);
+void AppDisp7sConfig(U8 Dig);
+void AppDisp7sSetDigito(char Dig1, char Dig2, char Dig3, char Dig4);
+void AppDisplayResetTimeOut(void);
+void AppDispErro(U8 erro);

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "eventsmanager.h": "c",
+        "app.h": "c",
+        "appteclasbotoeira.h": "c",
+        "appdisp7s.h": "c",
+        "entradas.h": "c",
+        "stm8s_gpio.h": "c",
+        "apphardwaretest.h": "c",
+        "teste.h": "c",
+        "gpio.h": "c",
+        "appantiesmagamento.h": "c",
+        "generictypes.h": "c",
+        "appciclos.h": "c",
+        "appcomunicacaobotoeira.h": "c"
+    }
+}
