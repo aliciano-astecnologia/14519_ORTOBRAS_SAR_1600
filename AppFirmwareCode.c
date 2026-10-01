@@ -33,7 +33,11 @@ void AppFirmwareCodeCheckEnter (void)
 static void AppFirmwareCodeTask (void)
 {
    TickTimerSet(&TUpdateScroll, 333);
-   FlagStart = 0; /* habilita o update do display */
+
+   if (FlagTecla)
+   {
+      FlagStart = 0; /* habilita o update do display */
+   }
 
    while (FlagTecla)
    {

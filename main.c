@@ -14,7 +14,7 @@
 #include "AppComm.h"
 
 U8 FlagRun = 0;
-U8 FlagStart;
+U8 FlagStart = 1;
 extern U8 FlagComOk;
 extern U8 FlagTimeoutDisp;
 extern U8 FlagDisplayOff;
@@ -48,7 +48,6 @@ void main(void)
 	
 	LIGA_CD1;LIGA_CD2;LIGA_CD3;LIGA_CD4;
 	LIGA_SEG_A;LIGA_SEG_B;LIGA_SEG_C;LIGA_SEG_D;LIGA_SEG_E;LIGA_SEG_F;LIGA_SEG_G;LIGA_SEG_P;
-	FlagStart = 1;
 
 	AppFirmwareCodeCheckEnter();
 	
